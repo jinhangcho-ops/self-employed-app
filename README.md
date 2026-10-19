@@ -23,7 +23,7 @@
 |---|---|---|---|
 | 풀스택 | 예은 | [@yetk124](https://github.com/yetk124) | 화면 · API · 배포 |
 | 데이터 분석 | 이수진 | [@arlusurge](https://github.com/arlusurge) | DB 설계 · 지표 SQL |
-| 데이터 분석 | 이지원 | [@[kenjiwon](https://github.com/kenjiwon) | 데이터 수집 · OCR 정리 |
+| 데이터 분석 | 이지원 | [@kenjiwon](https://github.com/kenjiwon) | 데이터 수집 · OCR 정리 |
 
 <br>
 
