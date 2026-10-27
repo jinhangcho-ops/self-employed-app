@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thanks
+Disallow: /app/
+
+Sitemap: https://domain-app.kr/sitemap.xml
