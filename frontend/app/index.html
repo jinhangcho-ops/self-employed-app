@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>domain 앱</title>
+    <meta
+      name="description"
+      content="메뉴별 실제 마진, 오늘 이익, 영수증 인식, 영업 마감 알림까지. 외식업 사장님을 위한 domain 앱이에요."
+    />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141414" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="domain" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-180.png" />
+        <script>
+      try {
+        if (sessionStorage.getItem('domain.splash') === '1') document.documentElement.classList.add('no-splash')
+      } catch (e) {}
+    </script>
+    <style>
+      html.no-splash .splash { display: none; }
+      html, body { margin: 0; background: #fff; }
+      .splash { position: fixed; inset: 0; z-index: 100; background: #fff; }
+      .splash > * { opacity: 0; }
+      @media (min-width: 481px) {
+        html, body { background: #f3f3f3; }
+        .splash { left: 50%; right: auto; width: 480px; transform: translateX(-50%); }
+      }
+      @media (prefers-color-scheme: dark) {
+        html, body { background: #212121; }
+        .splash { background: #141414; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 시작 화면: React가 뜨기 전에 바로 보이도록 HTML에 둠 -->
+    <div class="splash" id="splash" role="img" aria-label="domain 시작 화면">
+      <img class="pet" src="/img/mascot.webp" width="341" height="428" alt="" />
+      <img class="logo" src="/img/logo.png" width="455" height="102" alt="domain" />
+      <p>오늘 장사, 얼마 남았을까요?</p>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/app/main.tsx"></script>
+  </body>
+</html>
